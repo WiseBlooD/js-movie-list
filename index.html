@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header class="container">
+    <div class="header__content">
+        <a href="index.html" class="header__logo">Movie App</a>
+        <form class="form">
+            <label>
+                <input type="text" class="header__search" placeholder="Поиск"/>
+            </label>
+        </form>
+    </div>
+</header>
+<form>
+    <label class="filters" for="genre">
+        <select id="genre">
+            <option value="">Все жанры</option>
+            <option value="комедия">Комедия</option>
+            <option value="боевик">Боевик</option>
+            <option value="фантастика">фантастика</option>
+        </select>
+    </label>
+</form>
+<form>
+    <label for="itemsCount">
+        <select id="itemsCount">
+            <option value="20">Количество фильмов на странице(20)</option>
+            <option value="10">10</option>
+            <option value="6">6</option>
+        </select>
+    </label>
+</form>
+<div class="pagination">
+    <ul class="pagination__list"></ul>
+</div>
+<div class="container">
+    <div class="movies"></div>
+    <div class="modal"></div>
+</div>
+<script defer  src="app.js"></script>
+</body>
+</html>
